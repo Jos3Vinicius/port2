@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>JvdSantos</title>
+       <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+       <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+        
+        <div id="fundo"></div>
+        <div id="particles-js"></div>
+        <div id="testando" onscroll="huekk()">
+            <div style="transform-style: preserve-3d" id="cima">
+                <a href="2 - Pagina projetos/Projetos.html"><div id="divmove" data-tilt style="transform-style: preserve-3d; margin: 0;" >
+                    <img id="sobremim1" src="../1 - Pagina principal - Copia/Imagens/semfundo.png" alt="">
+                    <img id="sobremim2" style="position: absolute;" src="../1 - Pagina principal - Copia/Imagens/semfundo.png" alt="">
+                    <img id="sobremim3" style="position: absolute" src="../1 - Pagina principal - Copia/Imagens/semfundo.png" alt="">
+                    <img id="icone_pessoa" style="position: absolute" src="../1 - Pagina principal - Copia/Imagens/pessoa.png" alt="">
+                </div></a>
+            </div>
+        <div id="textos">
+            <h1 id="sobremim">SOBRE MIM</h1>
+            <h1 id="projetoss">PROJETOS</h1>
+            <h1 id="github">GITHUB</h1>
+        </div>
+        <div id="huebr">
+            <div style="transform-style: preserve-3d; margin-right: -120;">
+                <a id="margi" href="C:\Users\jose-\OneDrive\Área de Trabalho\Programação\Portifolio\2 - Pagina projetos\portifolio.html"><div id="esquerda" data-tilt style="transform-style: preserve-3d">
+                    <img id="projetos" src="../1 - Pagina principal - Copia/Imagens/semfundo.png" alt="">
+                    <img id="projetos2" style="position: absolute;" src="../1 - Pagina principal - Copia/Imagens/semfundo.png" alt="">
+                    <img id="projetos3" style="position: absolute;" src="../1 - Pagina principal - Copia/Imagens/semfundo.png" alt="">
+                    <img id="icone_projetos" style="position: absolute;" src="../1 - Pagina principal - Copia/Imagens/projetos.png" alt="">
+                </div></a>
+            </div>
+            <div id="gittt" style="transform-style: preserve-3d;">
+                <a id="ocultar"href=""><div id="direita" data-tilt style="transform-style: preserve-3d">
+                        <img id="GITHUBB" src="../1 - Pagina principal - Copia/Imagens/semfundo.png" alt="">
+                        <img id="GITHUB1" style="position: absolute;" src="../1 - Pagina principal - Copia/Imagens/semfundo.png" alt="">
+                        <img id="GITHUB2" style="position: absolute;" src="../1 - Pagina principal - Copia/Imagens/semfundo.png" alt="">
+                        <img id="git" style="position: absolute; "src="../1 - Pagina principal - Copia/Imagens/github.png" alt="">
+                </div> </a>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
+    
+    <script src="js/vanilla-tilt.js"></script>
+    
+    <script>
+        document.getElementById("divmove").addEventListener("mouseover",funcao)
+        document.getElementById("divmove").addEventListener("mouseout",funcao2)
+
+        document.getElementById("esquerda").addEventListener("mouseover",funcao3)
+        document.getElementById("esquerda").addEventListener("mouseout",funcao4)
+
+        document.getElementById("direita").addEventListener("mouseover",funcao5)
+        document.getElementById("direita").addEventListener("mouseout",funcao6)
+
+        function funcao(){
+            document.getElementById("sobremim2").style.animation = "ani 1s infinite"
+            document.getElementById("sobremim3").style.animation = "ani 1s infinite"
+            document.getElementById("sobremim3").style.animationDelay = "0.5s"
+            document.getElementById("sobremim1").style.webkitFilter = "drop-shadow(0px 00px  1rem #0c5ef5) drop-shadow(0px 00px  1rem #0c5ef5)"
+            document.getElementById("icone_pessoa").style.webkitFilter = "drop-shadow(0px 00px  1rem #0c5ef5)"
+            document.getElementById("sobremim").style.opacity = "1"
+        }
+        function funcao2(){
+            document.getElementById("sobremim2").style.animation = "ani 0s 0"
+            document.getElementById("sobremim3").style.animation = "ani 0s 0"
+            document.getElementById("sobremim1").style.webkitFilter = "none"
+            document.getElementById("icone_pessoa").style.webkitFilter = "none"
+            document.getElementById("sobremim").style.opacity = "0"
+        }
+        function funcao3(){
+            document.getElementById("projetos2").style.animation = "ani 1s infinite"
+            document.getElementById("projetos3").style.animation = "ani 1s infinite"
+            document.getElementById("projetos").style.webkitFilter = "drop-shadow(0px 00px  1rem #0c5ef5) drop-shadow(0px 00px  1rem #0c5ef5)"
+            document.getElementById("projetos3").style.animationDelay = "0.5s"
+            document.getElementById("icone_projetos").style.webkitFilter = "drop-shadow(0px 00px  1rem #0c5ef5) drop-shadow(0px 00px  1rem #0c5ef5)"
+            document.getElementById("projetoss").style.opacity = "1"
+        }
+        function funcao4(){
+            document.getElementById("projetos2").style.animation = "ani 0s 0"
+            document.getElementById("projetos3").style.animation = "ani 0s 0"
+            document.getElementById("projetos").style.webkitFilter = "none"
+            document.getElementById("icone_projetos").style.webkitFilter = "none"
+            document.getElementById("projetoss").style.opacity = "0"
+        }
+        function funcao5(){
+            document.getElementById("GITHUB1").style.animation = "ani 1s infinite"
+            document.getElementById("GITHUB2").style.animation = "ani 1s infinite"
+            document.getElementById("GITHUBB").style.webkitFilter = "drop-shadow(0px 00px  1rem #0c5ef5) drop-shadow(0px 00px  1rem #0c5ef5)"
+            document.getElementById("GITHUB2").style.animationDelay = "0.5s"
+            document.getElementById("git").style.webkitFilter = "drop-shadow(0px 00px  1rem #0c5ef5) drop-shadow(0px 00px  1rem #0c5ef5)"
+            document.getElementById("github").style.opacity = "1"
+        }
+        function funcao6(){
+            document.getElementById("GITHUB1").style.animation = "ani 0s 0"
+            document.getElementById("GITHUB2").style.animation = "ani 0s 0"
+            document.getElementById("GITHUBB").style.webkitFilter = "none"
+            document.getElementById("git").style.webkitFilter = "none"
+            document.getElementById("github").style.opacity = "0"
+        }
+
+        function huekk(){
+        x = document.getElementById("testando").scrollLeft;
+        if(x > 365 && x < 500){
+            document.getElementById("sobremim").style.opacity = "0";
+            document.getElementById("sobremim").style.transition = "0.5s";
+            document.getElementById("projetoss").style.opacity = "1";
+            document.getElementById("projetoss").style.display = "block"
+            document.getElementById("github").style.opacity = "0";            
+        }
+        if(x > 810){
+            document.getElementById("github").style.display = "block"
+            document.getElementById("github").style.opacity = "1";
+            document.getElementById("github").style.marginLeft = "65px";
+            document.getElementById("projetoss").style.opacity = "0";
+            document.getElementById("projetoss").style.transition = "0.5s";
+            document.getElementById("github").style.display = "block"
+        }if(x < 350){
+            document.getElementById("sobremim").style.opacity = "1";
+            document.getElementById("projetoss").style.transition = "0.5s";
+            document.getElementById("projetoss").style.opacity = "0";
+            document.getElementById("sobremim").style.display = "block"
+            document.getElementById("github").style.opacity = "0";       
+        }
+        
+        }
+        
+      
+    </script>
+
+</html>

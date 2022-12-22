@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+    <body>
+        <div id="background"></div>
+        <div id="particulas"></div>
+        <div id="hamburguer">
+            <div id="linha1"></div>
+            <div id="linha2"></div>
+            <div id="linha3"></div>
+        </div>
+
+        <div id="menus_esquerdos">
+            <a href=""><div id="bordas"><img id="sobre_mim1" src="imagens/pessoa.png"alt=""></div></a>
+            <a href=""><div id="bordas"><img id="sobre_mim1" src="imagens/projetos.png"alt=""></div></a>
+            <a href=""><div id="bordas"><img id="sobre_mim1" src="imagens/github.png"alt=""></div></a>
+        </div>
+        <div id="textos_esquerdo">
+            <a href=""><h1>SOBRE MIM</h1></a>
+            <a href="" ><h1 id="testo2">PROJETOS</h1></a>
+            <a href="" ><h1 id="testo3">GITHUB</h1></a>
+        </div>
+        <div id="centralizar">
+            <div id="titulos">
+                <a href="">EXCEL</a>
+                <a href="">FRONT END</a>
+                <a href="">PYTHON</a>
+            </div>
+            <div id="imagens">
+                <div class="hue1">
+                    <img class="img1" src="imagens/excel/excel1.png" alt="">
+                </div>
+                <div class="hue1">
+                    <img id="img1" class="img1"src="imagens/excel/excel 2.png" alt="">
+                </div>
+                <div class="hue1">
+                    <img id="img1" class="img1"src="imagens/excel/excel 3.png" alt="">
+                </div>
+
+                <a id="hue" onclick="plusSlides(-1)"> ❮ </a>
+                <a id="hue2" onclick="plusSlides(1)"> ❯ </a>
+            </div>
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+            function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("hue1");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slides[slideIndex-1].style.display = "block";  
+            }
+        </script>
+
+        </div>
+
+    </body>
+</html>

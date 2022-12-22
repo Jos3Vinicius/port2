@@ -1,0 +1,150 @@
+*{
+  box-sizing: border-box; 
+  margin: 0;
+
+}
+body{
+    overflow-y: hidden;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+}
+#fundo{
+  background: radial-gradient(circle closest-side,#1b335f ,#081020);
+  position: absolute;
+  margin-top: -100px;
+  width: 100%;
+  height: 100%;
+}
+img{
+  transition: 1s
+}
+#testando div{
+  
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+#cima{
+  margin-top: 120;
+}
+#huebr div{
+  margin-top: -40px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+#sobremim2, #projetos2{
+  position: relative;
+  scale: 0.9 0.9;
+  z-index: -1;
+  opacity: 0;
+  animation-delay: 5s;
+}
+#sobremim3, #projetos3{
+  position: relative;
+  scale: 0.9 0.9;
+  z-index: -1;
+  opacity: 0;
+  animation-delay: 5s;
+}
+#icone_pessoa, #icone_projetos, #git{
+  position: relative;
+  z-index: -1;
+  transform: translateZ(50px)
+}
+@keyframes ani{
+    0%{opacity: 1;}
+    50%{opacity: 0.5;}
+    100%{opacity: 0; scale: 0 0;}
+
+}
+#textos{
+  z-index: -5;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin-top: 50px;
+}
+#textos h1{
+  color: #4b9fff;
+  position: absolute;
+  transition: 1s;
+  opacity: 0;
+}
+#sobremim,#projetoss,#github{
+  transition: 1s;
+  opacity: 0;
+}
+#particles-js{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2px;
+  margin-top: -100px;
+  opacity: 0.7;
+  
+}
+#testando{
+  width: 100%;
+  height: 100%s;
+}
+@media (min-width: 2600px){
+    body div, img{
+        scale: 1.1 1.1  ;
+        margin: 100px;
+    }
+    #cima{
+      margin-top: 250px;
+    }
+}
+@media (max-width: 450px){
+    *{
+      margin: 0px;
+    }
+    #testando{
+      display: flex;
+      justify-content: center;
+      justify-items: center;
+      overflow-x: scroll;
+      scroll-behavior: smooth;
+      align-items: center;
+      align-content: center;
+      margin-top: 120px;
+      max-height: 80%;
+      max-width: 100%;
+    }
+    #huebr div{
+      display: flex;
+      margin-top:0px;
+      margin-left: 80px;
+      margin-right: -20px;
+    }
+    #direita{
+      width: 430px;
+    }
+  
+    #cima{
+      margin-left: 920px;
+    }
+    ::-webkit-scrollbar {
+      width: 0px;
+  }
+  #textos, #textos h1{
+    position: absolute;
+    margin-top: 450px;
+    margin-left: 10px;
+    z-index: 10;
+    opacity: 1;
+  }
+  
+  #github,#projetoss{
+    display: none;
+    width: 200px;
+  }
+  #sobremim{
+    width: 200px;
+  }
+    
+}
