@@ -12,6 +12,7 @@
             <div id="seguir2"></div>
         </div>
         <div id="particles-js"></div>
+    <div id="entrada">
         <div id="testando" onscroll="huekk()">
             <div style="transform-style: preserve-3d" id="cima">
                 <a href="2 - Pagina projetos/Projetos.html"><div id="divmove" data-tilt style="transform-style: preserve-3d; margin: 0;" >
@@ -46,13 +47,19 @@
             </div>
         </div>
         <h1 style="display: none;" id="testar123">adwa</h1>
+        <div id="textos2">
+            <h1 id="sobremim5">SOBRE MIM</h1>
+            <h1 id="projetoss5">PROJETOS</h1>
+            <h1 id="github5">GITHUB</h1>
+        </div>
+    </div>
     </body>
     <script src="js/particles.js"></script>
     <script src="js/app.js"></script>
     
     <script src="js/vanilla-tilt.js"></script>
     
-    <script>
+    <script>    
         document.getElementById("divmove").addEventListener("mouseover",funcao)
         document.getElementById("divmove").addEventListener("mouseout",funcao2)
 
@@ -110,26 +117,30 @@
 
         function huekk(){
         x = document.getElementById("testando").scrollLeft;
+        
+        if(x < 350){
+            document.getElementById("sobremim5").style.opacity = "1";
+            document.getElementById("projetoss5").style.transition = "0.5s";
+            document.getElementById("projetoss5").style.opacity = "0";
+            document.getElementById("sobremim5").style.display = "block"
+            document.getElementById("github5").style.opacity = "0";       
+        }
+
         if(x > 365 && x < 500){
-            document.getElementById("sobremim").style.opacity = "0";
-            document.getElementById("sobremim").style.transition = "0.5s";
-            document.getElementById("projetoss").style.opacity = "1";
-            document.getElementById("projetoss").style.display = "block"
-            document.getElementById("github").style.opacity = "0";            
+            document.getElementById("sobremim5").style.opacity = "0";
+            document.getElementById("sobremim5").style.transition = "0.5s";
+            document.getElementById("projetoss5").style.opacity = "1";
+            document.getElementById("projetoss5").style.display = "block"
+            document.getElementById("github5").style.opacity = "0";
+                       
         }
         if(x > 810){
-            document.getElementById("github").style.display = "block"
-            document.getElementById("github").style.opacity = "1";
-            document.getElementById("github").style.marginLeft = "65px";
-            document.getElementById("projetoss").style.opacity = "0";
-            document.getElementById("projetoss").style.transition = "0.5s";
-            document.getElementById("github").style.display = "block"
-        }if(x < 350){
-            document.getElementById("sobremim").style.opacity = "1";
-            document.getElementById("projetoss").style.transition = "0.5s";
-            document.getElementById("projetoss").style.opacity = "0";
-            document.getElementById("sobremim").style.display = "block"
-            document.getElementById("github").style.opacity = "0";       
+            document.getElementById("github5").style.display = "block"
+            document.getElementById("github5").style.opacity = "1";
+            document.getElementById("github5").style.marginLeft = "65px";
+            document.getElementById("projetoss5").style.opacity = "0";
+            document.getElementById("projetoss5").style.transition = "0.5s";
+            document.getElementById("github5").style.display = "block"
         }
         
         }
