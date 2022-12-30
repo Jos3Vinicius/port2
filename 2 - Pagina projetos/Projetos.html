@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html >
     <head>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="estilo.css">
     </head>
-    <body>
+    <body onmousemove="ver()">
+    <div id="seguir"></div>
+    <div id="animacao">
         <div id="menu">
             <div style="margin-top: 100px; width:100%; height: 20px; display: flex; justify-content: center;">
                 <a href="" style="color: #4b9fff; font-size: 23px;">INICIO</a>
@@ -26,27 +28,29 @@
         </div>
 
         <div id="menus_esquerdos">
-            <a href=""><div id="bordas"><img id="sobre_mim1" src="imagens/pessoa.png"alt=""></div></a>
-            <a href=""><div id="bordas"><img id="sobre_mim1" src="imagens/projetos.png"alt=""></div></a>
-            <a href=""><div id="bordas"><img id="sobre_mim1" src="imagens/github.png"alt=""></div></a>
+            <a><div id="bordas"><img id="sobre_mim1" src="imagens/pessoa.png"alt=""></div></a>
+            <a><div id="bordas"><img id="sobre_mim1" src="imagens/projetos.png"alt=""></div></a>
+            <a><div id="bordas"><img id="sobre_mim1" src="imagens/github.png"alt=""></div></a>
         </div>
         <div id="textos_esquerdo">
-            <a href=""><h1>SOBRE MIM</h1></a>
-            <a href="" ><h1 id="testo2">PROJETOS</h1></a>
-            <a href="" ><h1 id="testo3">GITHUB</h1></a>
+            <a href=""><h1 id="texto1">SOBRE MIM</h1></a>
+            <a href="" ><h1 id="texto2">PROJETOS</h1></a>
+            <a href="" ><h1 id="texto3">GITHUB</h1></a>
         </div>
         <div id="centralizar">
             <div id="titulos">
-                <a href="">EXCEL</a>
-                <a href="">FRONT END</a>
-                <a href="">PYTHON</a>
+                <a>EXCEL</a>
+                <a>FRONT END</a>
+                <a>PYTHON</a>
             </div>
             <div id="imagens">
                 <div class="hue1">
-                    <img class="img1" src="imagens/excel/excel1.png" alt="">
+                    <img id="img1" class="img1" src="imagens/excel/excel1.png" alt="">
+                    <h1>Planilha de controle de estoque</h1>
                 </div>
                 <div class="hue1">
                     <img id="img1" class="img1"src="imagens/excel/excel 2.png" alt="">
+                    <h1>Planilha de controle de estoque</h1>
                 </div>
                 <div class="hue1">
                     <img id="img1" class="img1"src="imagens/excel/excel 3.png" alt="">
@@ -55,7 +59,10 @@
                 <a id="hue" onclick="plusSlides(-1)"> ❮ </a>
                 <a id="hue2" onclick="plusSlides(1)"> ❯ </a>
             </div>
-            
+   
+        </div>
+        <h1 style="display: none;" id="testar123"></h1>
+    </div>
         <script>
             let slideIndex = 1;
             showSlides(slideIndex);
@@ -92,9 +99,15 @@
                     document.getElementById("menu").style.transition = "1s";
                 }
             }
+            function ver(){
+            x = event.pageX
+            y = event.pageY
+            huebr = x +" " + y
+            document.getElementById("testar123").innerHTML = huebr
+            document.getElementById("seguir").style.marginTop = y +"px"
+            document.getElementById("seguir").style.marginLeft = x  +"px" 
+            }
+
         </script>
-
-        </div>
-
     </body>
 </html>
