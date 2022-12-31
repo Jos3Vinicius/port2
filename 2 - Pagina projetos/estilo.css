@@ -10,6 +10,12 @@ html{
     background-size: cover;
     cursor: none;
 }
+#particles-js{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
 #animacao{
     animation-name: entrar;
     animation-duration: 2s;
@@ -191,7 +197,14 @@ img{
     width: 100%;
     height: 450px;
 }
-
+.efeito{
+    animation: animacao1;
+    animation-duration: 1.5s;
+}
+@keyframes animacao1{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
 #hue{
     left: 0px;
     width: 30px; 
@@ -224,6 +237,9 @@ img{
 }
 
 @media screen and (max-width: 1000px) {
+    #seguir{
+        display: none;
+    }
     #menus_esquerdos{
         display: none;
     }
@@ -233,8 +249,12 @@ img{
     #textos_esquerdo{
         display: none;
     }
-    #titulos{
-        display: none;
+    #titulos a{
+        font-size: 10px;
+        margin-bottom: -60px;
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: center;
     }
     #centralizar, #imagens{
         display: flex;
@@ -242,8 +262,8 @@ img{
         width: 100%;
     }
     #imagens{
-        margin: 10px;
-        width: 97%;
+        margin: 0px;
+        width: 90%;
         margin-top: 100px;
     }
     img{
@@ -257,12 +277,17 @@ img{
     #hamburguer{
         display: block;
     }
+    
 }
 @media screen and (max-width: 600px){
     #imagens h1{
         font-size: 15px;
     }
+    #seguir{
+        display: none;
+    }
 }
+
 @media (max-height: 420px){
     #hamburguer{
         margin-top: 10px;
@@ -270,11 +295,46 @@ img{
         scale: 0.8 0.8;
     }
     #imagens{
-        margin-top: 50px;
+        margin-top: 30px;
         height: 80%;
         width: 80%;
+        scale: 0.8 0.8;
     }
-    img{
+    #seguir{
+        display: none;
+    }
+    #menu div{
+        margin-top: 10px;
+    }
+    #titulos a{
+        font-size: 10px;
+        margin-top: 10px;
+        margin-bottom: -30px;
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: center;
+    }
+    
+}
+
+@media (max-height: 264px){
+    #imagens{
+        margin-top: -10px;
         height: 80%;
+        width: 80%;
+        scale: 0.8 0.8;
+    }
+    #hamburguer{
+        margin-top: 3px;
+        margin-left: 2px;
+        scale: 0.8 0.8;
+    }
+    #titulos a{
+        font-size: 10px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: center;
     }
 }
