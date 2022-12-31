@@ -7,16 +7,17 @@
     </head>
     <body onmousemove="ver()">
     <div id="seguir"></div>
+    <div id="particles-js"></div>
     <div id="animacao">
         <div id="menu">
-            <div style="margin-top: 100px; width:100%; height: 20px; display: flex; justify-content: center;">
-                <a href="" style="color: #4b9fff; font-size: 23px;">INICIO</a>
+            <div style=" margin-top: 20px; width:100%; height: 20px; display: flex; justify-content: center;">
+                <a href="" style="text-decoration: none; color: #4b9fff; font-size: 23px;">INICIO</a>
             </div>
-            <div style="margin-top:-110px;height: 20px; width:100%; display: flex; justify-content: center;">
-                <a href="" style="color: #4b9fff;font-size: 23px ">SOBRE MIM</a>
+            <div style="margin-top: -20px;height: 20px; width:100%; display: flex; justify-content: center;">
+                <a href="" style="text-decoration: none;color: #4b9fff;font-size: 23px ">SOBRE MIM</a>
             </div>
-            <div style="margin-top: -200px;height: 20px; width:100%; display: flex; justify-content: center;">
-                <a href="" style="color: #4b9fff;font-size: 23px">GITHUB</a>
+            <div style="margin-top: -20px;height: 20px; width:100%; display: flex; justify-content: center;">
+                <a href="" style="text-decoration: none;color: #4b9fff;font-size: 23px">GITHUB</a>
             </div>
         </div>
         <div id="particulas"></div>
@@ -45,15 +46,15 @@
             </div>
             <div id="imagens">
                 <div class="hue1">
-                    <img id="img1" class="img1" src="imagens/excel/excel1.png" alt="">
+                    <img id="img1" class="img1 efeito" src="imagens/excel/excel1.png" alt="">
                     <h1>Planilha de controle de estoque</h1>
                 </div>
                 <div class="hue1">
-                    <img id="img1" class="img1"src="imagens/excel/excel 2.png" alt="">
+                    <img id="img1" class="img1 efeito"src="imagens/excel/excel 2.png" alt="">
                     <h1>Planilha de controle de estoque</h1>
                 </div>
                 <div class="hue1">
-                    <img id="img1" class="img1"src="imagens/excel/excel 3.png" alt="">
+                    <img id="img1" class="img1 efeito"src="imagens/excel/excel 3.png" alt="">
                 </div>
 
                 <a id="hue" onclick="plusSlides(-1)"> ❮ </a>
@@ -63,7 +64,10 @@
         </div>
         <h1 style="display: none;" id="testar123"></h1>
     </div>
+        <script src="particles.js"></script>
+        <script src="app.js"></script>
         <script>
+            
             let slideIndex = 1;
             showSlides(slideIndex);
 
