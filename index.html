@@ -78,8 +78,8 @@
             document.getElementById("sobremim").style.opacity = "1"
         }
         function funcao2(){
-            document.getElementById("sobremim2").style.animation = "ani 0s 0"
-            document.getElementById("sobremim3").style.animation = "ani 0s 0"
+            document.getElementById("sobremim2").style.animation = "ani 1s 0"
+            document.getElementById("sobremim3").style.animation = "ani 1s 0"
             document.getElementById("sobremim1").style.webkitFilter = "none"
             document.getElementById("icone_pessoa").style.webkitFilter = "none"
             document.getElementById("sobremim").style.opacity = "0"
@@ -93,8 +93,8 @@
             document.getElementById("projetoss").style.opacity = "1"
         }
         function funcao4(){
-            document.getElementById("projetos2").style.animation = "ani 0s 0"
-            document.getElementById("projetos3").style.animation = "ani 0s 0"
+            document.getElementById("projetos2").style.animation = "ani 1s 0"
+            document.getElementById("projetos3").style.animation = "ani 1s 0"
             document.getElementById("projetos").style.webkitFilter = "none"
             document.getElementById("icone_projetos").style.webkitFilter = "none"
             document.getElementById("projetoss").style.opacity = "0"
@@ -117,30 +117,26 @@
 
         function huekk(){
         x = document.getElementById("testando").scrollLeft;
-        
-        if(x < 350){
-            document.getElementById("sobremim5").style.opacity = "1";
-            document.getElementById("projetoss5").style.transition = "0.5s";
-            document.getElementById("projetoss5").style.opacity = "0";
-            document.getElementById("sobremim5").style.display = "block"
-            document.getElementById("github5").style.opacity = "0";       
-        }
-
         if(x > 365 && x < 500){
-            document.getElementById("sobremim5").style.opacity = "0";
-            document.getElementById("sobremim5").style.transition = "0.5s";
-            document.getElementById("projetoss5").style.opacity = "1";
-            document.getElementById("projetoss5").style.display = "block"
-            document.getElementById("github5").style.opacity = "0";
-                       
+            document.getElementById("sobremim").style.opacity = "0";
+            document.getElementById("sobremim").style.transition = "0.5s";
+            document.getElementById("projetoss").style.opacity = "1";
+            document.getElementById("projetoss").style.display = "block"
+            document.getElementById("github").style.opacity = "0";            
         }
         if(x > 810){
-            document.getElementById("github5").style.display = "block"
-            document.getElementById("github5").style.opacity = "1";
-            document.getElementById("github5").style.marginLeft = "65px";
-            document.getElementById("projetoss5").style.opacity = "0";
-            document.getElementById("projetoss5").style.transition = "0.5s";
-            document.getElementById("github5").style.display = "block"
+            document.getElementById("github").style.display = "block"
+            document.getElementById("github").style.opacity = "1";
+            document.getElementById("github").style.marginLeft = "65px";
+            document.getElementById("projetoss").style.opacity = "0";
+            document.getElementById("projetoss").style.transition = "0.5s";
+            document.getElementById("github").style.display = "block"
+        }if(x < 350){
+            document.getElementById("sobremim").style.opacity = "1";
+            document.getElementById("projetoss").style.transition = "0.5s";
+            document.getElementById("projetoss").style.opacity = "0";
+            document.getElementById("sobremim").style.display = "block"
+            document.getElementById("github").style.opacity = "0";       
         }
         
         }
